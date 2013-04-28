@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MohamedDaewoo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<h3> Site map</h3>
+<%= link_to "الصفحة الرئيسية" ,wenchservices_index_path%><br />
+<%= link_to "من نحن" ,wenchservices_about_us_path%><br />
+<%= link_to "أتصل بنا" ,wenchservices_contact_us_path%><br />
+<h3> Services</h3>
+<%= link_to "خدمةالتزود بالوقود" ,wenchservices_fuel_supply_path%><br />
+<%= link_to "خدمة شحن البطارية" ,wenchservices_battery_recharge_path%><br />
+<%= link_to "خدمة تغيير الإطارات" ,wenchservices_wheel_replacement_path%><br />
+<%= link_to "خدمة سحب السيارة" ,wenchservices_car_pull_path%><br />
+<%= link_to "مركز الخدمة" ,wenchservices_center_path%><br />
+<%= link_to "شراء سيارات الحوادث" ,wenchservices_crashed_cars_path%><br />
+<%= link_to "خدمة قطع الغيار" ,wenchservices_spare_parts_path%><br />
+<%= link_to "خدمة الضمان" ,wenchservices_warranty_path%><br />
+<%= link_to "خدمة عازل أشعة الشمس" ,wenchservices_sunrise_isolator_path%><br />
+</body>
+</html>
